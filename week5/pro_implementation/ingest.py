@@ -11,8 +11,8 @@ from tenacity import retry, wait_exponential
 
 load_dotenv(override=True)
 
-MODEL = "openai/gpt-4.1-nano"
-
+#MODEL = "openai/gpt-4.1-nano"
+MODEL = "ollama/gpt-oss:20b"
 DB_NAME = str(Path(__file__).parent.parent / "preprocessed_db")
 collection_name = "docs"
 embedding_model = "text-embedding-3-large"
